@@ -82,3 +82,14 @@ def random():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+# /upper which gives the string a and it returns it in a JSON all in uppercase.
+
+
+@app.route('/upper')
+def upper():
+    a = request.args.get('a', type=str)
+    if a:
+        return make_response(jsonify(s=a.upper()), 200)
+    else:
+        return make_response('Invalid input\n', 400)
