@@ -19,4 +19,13 @@
 ## putting in git and merging branches
 
     > git init, add, create main branch, add remote repo
-    >
+    > create a new branch (git branch -m string_operations)
+    > commit and push to the new branch
+    > go to github repo page and you will see [compare and pull] request button
+    > come back to the terminal
+    > git switch main
+    > git pull origin main
+    > git merge <branch_name>
+    > git push origin main
+    > git branch -d <branch_name>
+    > git push origin --delete <branch_name> #deletes the push at origin <branch_name>
